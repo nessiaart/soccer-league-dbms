@@ -202,9 +202,9 @@ EOF
 				read UserPass
 
 				# Oracle Database connection information
-				USER="akward"
-				PASSWORD="05032458"
-				CONNECTION_STRING="(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(Host=oracle.scs.ryerson.ca)(Port=1521))(CONNECT_DATA=(SID=orcl)))"
+				USER="your_username"
+				PASSWORD="your_password"
+				CONNECTION_STRING="your_connection_string"
 				result=$(sqlplus64 -S "$USER/$PASSWORD@$CONNECTION_STRING" <<EOF
 				SET HEADING OFF FEEDBACK OFF VERIFY OFF
 				SELECT COUNT(*) FROM UserLogins WHERE Viewername='$UserName' AND Passkey='$UserPass';
