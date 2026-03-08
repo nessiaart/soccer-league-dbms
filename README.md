@@ -33,3 +33,7 @@ The CLI menu supports:
 4. Query Tables
 5. Exit
 
+## Contributors
+Vanessa Entonu
+Alexia Ward
+Vlad Scraba
